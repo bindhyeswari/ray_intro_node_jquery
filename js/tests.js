@@ -38,7 +38,7 @@ var utilities = {
                 }
             }
         });
-        xhr.send({data: 'asdf'});
+        xhr.send(JSON.stringify(data));
     },
 
     createElement: function (type, parent, html, className) {
@@ -129,16 +129,18 @@ form_test.addEventListener('submit', function (event) {
 
     console.log(formJSON);
 
-    /*console.log(formJSON);
+    console.log(formJSON);
+    document.getElementById('message').className = '';
     utilities.postJSON('/tests',
         utilities.getFormJSON('frm_create_test'),
         function (obj) {
             console.log(obj);
         },
         function (xhr) {
+            document.getElementById('message').className = 'show';
             console.log(xhr.status + ': ' + xhr.responseText);
         }
-    );*/
+    );
 });
 
 

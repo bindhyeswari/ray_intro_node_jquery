@@ -24,3 +24,10 @@ li.test_name {
     border-radius: 0.15em;
     cursor: pointer;
 }
+
+[id='message'] {
+    display: none;
+}
+.show {
+    display: block;
+}
