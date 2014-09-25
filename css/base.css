@@ -11,3 +11,16 @@ input, select, textarea {
     padding: 0.35em 0.5em;
     background-color: transparent;
 }
+
+
+
+li.test_name {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    background-color: #CCB49D;
+    color: #38312b;
+    text-shadow: 1px 1px 1px #fff5f4;
+    margin: 0.25em;
+    border-radius: 0.15em;
+    cursor: pointer;
+}
